@@ -2,7 +2,7 @@ import { parse as qsp } from 'query-string';
 import { mapValues, pick } from 'lodash';
 
 export const defaultProps = {
-  auth: 'normal',
+  auth: 'open',
   akId: '',
   akSecret: '',
   appId: '',
@@ -39,10 +39,10 @@ Object.freeze(propsType);
 
 export const selectOptions = {
   auth: [
-    {
-      value: 'normal',
-      text: '普通模式',
-    },
+    // {
+    //   value: 'normal',
+    //   text: '普通模式',
+    // },
     {
       value: 'open',
       text: '开放平台',

@@ -18,7 +18,7 @@
     <div class="panel-body">
       <!-- 连接模式 -->
       <InputGroup header="连接模式">
-        <select class="form-control" v-model="form.auth">
+        <select class="form-control" v-model="form.auth" disabled>
           <option v-for="{ value, text } in options.auth" :key="value" :value="value">{{ text }}</option>
         </select>
         <template #footer>
